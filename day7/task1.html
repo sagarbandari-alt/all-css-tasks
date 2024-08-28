@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+            display: grid;
+            border: 2px solid;
+            grid-template-columns: auto auto auto auto ;
+       }
+       .container div{
+        background-color: paleturquoise;
+        border: 1px solid;
+        padding: 30px;
+        margin: 10px;
+
+       }
+
+       .item1{
+           align-content: center;
+           text-align: center;
+           grid-column:1/2;
+           grid-row:1/3 ;
+        }
+        .item2{
+            align-content: center;
+            text-align: center;
+            grid-column:2/3;
+            grid-row:1/2;
+        }
+        .item3{
+            align-content: center;
+            text-align: center;
+            grid-column:3/5;
+            grid-row:1/2;
+        }
+        .item4{
+            align-content: center;
+            text-align: center;
+            grid-column:2/3;
+            grid-row:2/2;
+        }
+        .item5{
+            align-content: center;
+            text-align: center;
+            grid-column:3/4;
+            grid-row:2/4;
+        }
+        .item6{
+            align-content: center;
+            text-align: center;
+            grid-column:4/5;
+            grid-row:2/3;
+        }
+        .item7{
+            align-content: center;
+            text-align: center;
+            grid-column:1/2;
+            grid-row:3/4;
+        }
+        .item8{
+            align-content: center;
+            text-align: center;
+            grid-column:2/3;
+            grid-row:3/5;
+        }
+        .item9{
+            align-content: center;
+            text-align: center;
+            grid-column:4/5;
+            grid-row:3/4;
+        }
+        .item10{
+            align-content: center;
+            text-align: center;
+            grid-column:1/2;
+            grid-row:4/5;
+        }
+        .item11{
+            align-content: center;
+            text-align: center;
+            grid-column:3/5;
+            grid-row:4/5;
+        }
+       
+    </style>
+</head>
+<body>
+    <h3>CSS Grid examples</h3>
+    <div class="container">
+        <div class="item1">Masonry 1</div>
+        <div class="item2">Responsive</div>
+        <div class="item3">Overip</div>
+        <div class="item4">Fluid</div>
+        <div class="item5">Explicitly placed</div>
+        <div class="item6">Negative space</div>
+        <div class="item7">Flexible breadth</div>
+        <div class="item8">Masonry 2</div>
+        <div class="item9">Masonry 3</div>
+        <div class="item10">Dom order</div>
+        <div class="item11">Named tracks</div>
+    </div>
+</body>
+</html>

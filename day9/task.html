@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            bottom:-200px;
+            
+             
+        }
+        .s1{
+            background-color: orangered ;
+            border-radius: 50%;
+            width: 60px;
+            height:60px;
+            margin:3px;
+            animation: bounce 1s infinite;
+            animation-duration: 1s;
+            position: relative;
+            
+
+        }
+        .s2{
+            background-color:orangered ;
+            border-radius: 50%;
+            width: 60px;
+            height:60px;
+            margin:3px;
+            animation: bounce 2s infinite;
+           animation-duration: 1s;
+           animation-delay: 0.2s;
+           position: relative;
+           
+           
+        }
+        .s3{
+            background-color:orangered ;
+            border-radius: 50%;
+            width: 60px;
+            height:60px;
+            margin:3px;
+            animation: bounce 3s infinite;
+            animation-duration: 1s;
+            animation-delay: 0.4s;
+            position: relative;
+        }
+        .container2{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            bottom:-350px;
+        }
+        .a1{
+            background-color:aqua;
+            border-radius: 50%;
+            width: 10px;
+            height:10px;
+            margin: 6px;
+            animation: mov 2s infinite;
+            animation-duration: 2s;
+            animation-direction: alternate;
+        }
+        .a2{
+            background-color:aqua ;
+            border-radius: 50%;
+            width: 10px;
+            height:10px;
+            margin: 6px;
+            animation: mov 2s infinite;
+            animation-duration: 1s;
+            animation-direction: alternate;
+
+        }
+        .a3{
+            background-color:aqua;
+            border-radius: 50%;
+            width: 10px;
+            height:10px;
+            margin: 6px;
+            animation: mov 2s infinite;
+            animation-duration: 1s;
+            animation-direction: alternate;
+        }
+
+
+        @keyframes bounce {
+          0%{top: 0;}
+          50%{top: 80px;}
+          0%{top: 0;}
+
+
+        }
+        @keyframes mov{
+            0%{ right: 0;
+            background-color:aqua;
+            transform: scale(1.2);
+            }
+
+            50%{right: 100%;
+                background-color: aqua;
+                transform: scale(1.5);
+           
+            }
+
+           0%{ right: 0;
+            background-color: aqua;
+            transform: scale(1.7);
+            
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="s1"></div>
+        <div class="s2"></div>
+        <div class="s3"></div>
+    </div>
+    <div class="container2">
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+    </div>
+       
+</body>
+</html>
